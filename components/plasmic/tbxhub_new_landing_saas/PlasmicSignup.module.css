@@ -1,0 +1,531 @@
+.root {
+  display: grid;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+}
+.root > * {
+  grid-column: 4;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  padding: 8px;
+}
+.headerNav:global(.__wab_instance) {
+  max-width: 100%;
+}
+.signUp {
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 960px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  flex-shrink: 0;
+  padding: 96px 32px 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .signUp {
+    width: auto;
+  }
+}
+.content {
+  width: 360px;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .content {
+    width: auto;
+  }
+}
+.header {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.textAndSupportingText {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.text {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 38px;
+  color: rgba(23, 23, 23, 1);
+  align-self: stretch;
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text {
+    font-size: 25px;
+  }
+}
+.supportingText {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(82, 82, 82, 1);
+  align-self: stretch;
+  position: relative;
+}
+.content3 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 12px;
+}
+.form {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.inputField {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 50px;
+}
+.inputFieldBase {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.inputWithLabel {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 6px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.label {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(64, 64, 64, 1);
+  position: relative;
+}
+.input {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(212, 212, 212, 1);
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.05000000074505806));
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .input {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.content4 {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.svg__xAw5P {
+  object-fit: cover;
+  max-width: 100%;
+  color: #737373;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text2 {
+  display: block;
+  flex-grow: 1;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(115, 115, 115, 1);
+  position: relative;
+}
+.helpIcon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.img___9Wlb3 {
+  object-fit: cover;
+  max-width: 100%;
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+}
+.img___9Wlb3 > picture > img {
+  object-fit: cover;
+}
+.hintText {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(82, 82, 82, 1);
+  align-self: stretch;
+  position: relative;
+}
+.button:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  align-self: stretch;
+}
+.svg__oiuGx {
+  position: relative;
+  height: 1em;
+}
+.text__jpdw {
+  white-space: pre;
+}
+.svg__jb16V {
+  position: relative;
+  height: 1em;
+}
+.contentDivider {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.divider {
+  background: rgba(229, 229, 229, 1);
+  height: 1px;
+  display: block;
+  position: relative;
+  flex-grow: 1;
+}
+.text4 {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(115, 115, 115, 1);
+  position: relative;
+}
+.divider2 {
+  background: rgba(229, 229, 229, 1);
+  height: 1px;
+  display: block;
+  position: relative;
+  flex-grow: 1;
+}
+.socialButtonGroup {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+.socialButton {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(212, 212, 212, 1);
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.05000000074505806));
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.img__dlEAf {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.img__dlEAf > picture > img {
+  object-fit: cover;
+}
+.text5 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(64, 64, 64, 1);
+  position: relative;
+}
+.socialButton2 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(212, 212, 212, 1);
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.05000000074505806));
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.img___544Gz {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.img___544Gz > picture > img {
+  object-fit: cover;
+}
+.text6 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(64, 64, 64, 1);
+  position: relative;
+}
+.socialButton3 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(212, 212, 212, 1);
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.05000000074505806));
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.svg__dmKxd {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text7 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(64, 64, 64, 1);
+  position: relative;
+}
+.socialButton4 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(212, 212, 212, 1);
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.05000000074505806));
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+.img__b9Jie {
+  object-fit: cover;
+  max-width: 100%;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.img__b9Jie > picture > img {
+  object-fit: cover;
+}
+.text8 {
+  display: block;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(64, 64, 64, 1);
+  position: relative;
+}
+.row {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 4px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.text9 {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(82, 82, 82, 1);
+  position: relative;
+}
+.buttonsButton2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.buttonBase2 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.text10 {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 20px;
+  color: rgba(105, 65, 198, 1);
+  position: relative;
+}

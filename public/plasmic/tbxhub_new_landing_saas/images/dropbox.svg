@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="35" fill="#0F287F"/>
+  <path fill="#DAF8FE" fill-rule="evenodd" d="M27.5 20 15 27.5 27.5 35 15 42.5 27.5 50 40 42.5 52.5 50 65 42.5 52.5 35 65 27.5 52.5 20 40 27.5zM40 27.5 52.5 35 40 42.5 27.5 35z" clip-rule="evenodd"/>
+  <path fill="#DAF8FE" d="M27.5 55 40 47.5 52.5 55 40 62.5z"/>
+</svg>

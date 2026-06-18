@@ -1,0 +1,13 @@
+.root:global(.__wab_instance) {
+  object-fit: cover;
+  box-sizing: border-box;
+  color: var(--token-Sj3ZbficU-Pu);
+  font-family: var(--token-Quac6qWhsrI8);
+  font-size: var(--token-lxFmAVCYGiRL);
+  line-height: var(--token-fe2KJpdqohjc);
+  position: relative;
+}
+.freeBox {
+  position: relative;
+  display: flex;
+}

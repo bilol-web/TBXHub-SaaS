@@ -1,0 +1,81 @@
+.ariaSelect:global(.__wab_instance) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: var(--token-Qv6AVxmtRoCq);
+  min-width: 0;
+}
+.ariaSelect[data-disabled][data-disabled]:global(.__wab_instance) {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.ariaButton:global(.__wab_instance) {
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: inset 0px 0px 0px 1px var(--token-P3k1rPVI4J-Q);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  outline-style: none;
+  background: var(--token-Nbvk_XDyiHu8);
+  min-width: 0;
+  border-radius: var(--token-gNHICPbDD_uk);
+  padding: 0px;
+  border-style: none;
+}
+.ariaSelect[data-focus-visible] .ariaButton:global(.__wab_instance) {
+  outline-style: solid;
+  outline-width: var(--token-JM3aIxXou44Z);
+  outline-offset: 1px;
+  outline-color: var(--token-7OGuuSpVTN0h);
+}
+.ariaSelectedValue:global(.__wab_instance) {
+  font-size: var(--token-lxFmAVCYGiRL);
+  line-height: var(--token-fe2KJpdqohjc);
+  padding-top: var(--token-gNHICPbDD_uk);
+  padding-bottom: var(--token-gNHICPbDD_uk);
+  padding-left: var(--token-U5h3G-k3WpA0);
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-Sj3ZbficU-Pu);
+  min-width: 0;
+}
+.freeBox {
+  display: flex;
+  position: relative;
+  width: var(--token-6X2C5WDWtBTO);
+  height: var(--token-6X2C5WDWtBTO);
+  justify-content: center;
+  align-items: center;
+}
+.svg {
+  width: var(--token-lD7HRW3X5wOz);
+  height: var(--token-lD7HRW3X5wOz);
+  flex-shrink: 0;
+}
+.description:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+}
+.menuPopover:global(.__wab_instance):global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.menuSection__sE3DE:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+}
+.text__kMmLk {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
