@@ -1,0 +1,40 @@
+# CI build gate.
+#
+# Purpose: validate that the app still compiles on every change — especially the
+# pull requests that Plasmic's own workflow (.github/workflows/plasmic.yml) opens
+# when a design is published. A green check here means it's safe to merge and
+# then do the manual pull to Cloudways. There is no deploy step on purpose:
+# deployment is a manual Cloudways git pull.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Cancel superseded runs on the same ref (e.g. rapid Plasmic re-publishes).
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Install & build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
